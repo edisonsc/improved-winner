@@ -8,10 +8,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>x</title>
+    <title>Kids on Brooms Character Sheet</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./pages/index.css">
 </head>
 
 <body>
@@ -23,20 +23,28 @@
     </section>
 
     <section class="information">
-        <form action="" class="form">
+        <form action="" class="form" name="information-form">
             <label for="name">Name
-                <input type="text" class="form__input" name="name">
+                <input type="text" class="form__input" name="name" placeholder="Name" minlength="2" maxlength="30">
             </label>
             <label for="age">Age
-                <input type="text" class="form__input" name="name">
+                <input type="number" class="form__input" name="age" min="10" max="25" placeholder="Age">
             </label>
-            <label for="name">Name
-                <input type="text" class="form__input" name="name">
+            <label for="pronouns">Pronouns
+                <input type="text" class="form__input" name="pronouns" minlength="2" maxlength="30">
             </label>
-            <label for="name">Name
-                <input type="text" class="form__input" name="name">
+            <label for="fear">Fear
+                <input type="text" class="form__input" name="fear">
             </label>
-
+            <label for="motivation">Motivation
+                <input type="text" class="form__input" name="motivation">
+            </label>
+            <label for="description">Description
+                <input type="text" class="form__input" name="description">
+            </label>
+            <label for="grade">Grade
+                <input type="number" class="form__input" name="grade" min="6" max="12">
+            </label>
         </form>
     </section>
     <section class="stats">
@@ -51,7 +59,8 @@
     <section class="tropes">
 
     </section>
-    <script src="" async defer></script>
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/validate.js"></script>
 </body>
 
 </html>
