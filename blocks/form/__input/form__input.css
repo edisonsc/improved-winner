@@ -1,0 +1,12 @@
+.form__input {
+  border: none;
+  border-bottom: 1 px solid gray;
+}
+
+.form__input:invalid {
+  border-bottom: 1px solid red;
+}
+
+.form__input:valid {
+  border-bottom: 1px solid green;
+}
